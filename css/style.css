@@ -1,0 +1,13 @@
+.body{
+  color: #BCC7E7;
+  color: #FFF6F1;
+  color: #202A47;
+  color: #FFFFFF;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  color: #202A47;
+}
