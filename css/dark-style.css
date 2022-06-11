@@ -1,0 +1,66 @@
+.body {
+    color: #BCC7E7;
+    color: #FFF6F1;
+    color: #202A47;
+    color: #FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #fddff0;
+    letter-spacing: 1px;
+    background-color: #202A47
+}
+
+header {
+    min-height: 100vh;
+    background-image: url(../images/background-2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_section {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav_section a {
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.nav_section i {
+    /* padding-top: 20px;  ليه مش ضابط غير كده  */
+    color: #fddff0;
+}
+
+.nav_section img {
+    margin: 10px 10px;
+    width: 30px;
+}
+
+.features {
+    height: 10%;
+    background-color: #202A47
+}
+
+.feature {
+    display: flex;
+}
+
+.feature img {
+    width: 80px;
+    color: #fddff0
+}
