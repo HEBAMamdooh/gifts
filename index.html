@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="css/all.min.css">
   <!--Import bootstrap.css-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
   <!-- My Custom Style -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -94,8 +93,66 @@
       </div><!-- container -->
     </div><!-- features -->
   </header>
-  <section id="latest"></section>
-  
+  <section id="latest">
+    <h2 class="text-center py-5 ">Our Latest Products</h2>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="container carousel-inner">
+        
+        <script>
+          for (var i = 1; i < 4; i++) {
+            if (i % 2 == 0) {
+              document.write(`
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="container my-5">
+                    <img src="images/${i}.jpg" class="d-block w-75 m-auto" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-6 my-5">
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem recusandae, perferendis consequuntur
+                    error qui sunt.</p>
+                  <span>157</span>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn"><i class="fa-solid fa-heart"></i></i> Add to Favourite</a></div>
+                    <div class="col-5"><a href="#" class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>`);
+            } else {
+              document.write(`
+              <div class="carousel-item " data-bs-interval="1000">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="container my-5">
+                      <img src="images/${i}.jpg" class="d-block w-75 m-auto" alt="...">
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-5">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem recusandae, perferendis consequuntur
+                      error qui sunt.</p>
+                    <span>157</span>
+                    <a href="#" class="btn">toCart</a>
+                    <a href="#" class="btn">toFavourite</a>
+                  </div>
+                </div>
+              </div>`);
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </section>
+
   <!--JavaScript at end of body for optimized loading-->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>

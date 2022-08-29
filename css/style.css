@@ -42,8 +42,6 @@ nav{
   padding: 10px 10px;
   text-decoration: none;
   text-transform: capitalize;
-  }
-  .nav_section i{
   color: #202A47;
   }
 .nav_section img{
@@ -73,6 +71,7 @@ nav{
   padding: 5px;
   background-color: #BCC7E7;
   text-transform: uppercase;
+  color: #202A47;
 }
 .features {
   position: absolute;
